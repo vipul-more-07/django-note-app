@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/backend
 
-EXPOSE 443
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:443"]
+EXPOSE 80
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:80"]
 #RUN python manage.py migrate
 #RUN python manage.py makemigrations
